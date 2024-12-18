@@ -8,7 +8,7 @@ This **README.md** file for  completed **E-Commerce Order Management System** pr
 The **E-Commerce Order Management System** allows users to place, update, and cancel orders in an online e-commerce store. Built with **Java**, **Spring Boot**, **Microservices Architecture**, and **Kafka/RabbitMQ** for messaging queues, this system efficiently handles order, product, and customer management. It also utilizes **Redis** for caching and **MySQL** for database storage, ensuring high availability and performance.
 
 ## **Technologies Used**
-- **Java 11**
+- **Java 17**
 - **Spring Boot** for building REST APIs
 - **Microservices Architecture** for decoupling services
 - **Kafka/RabbitMQ** for asynchronous messaging
@@ -62,7 +62,8 @@ Each service runs independently, communicating with other services via REST APIs
   "orderDate": "2024-12-16T12:00:00",
   "status": "PENDING",
   "totalAmount": 250.00
-}
+    
+    }
     ```
   - Response:
     ```json
@@ -75,6 +76,7 @@ Each service runs independently, communicating with other services via REST APIs
     "status": "PENDING",
     "price": 70000.5,
     "totalAmount": 3.500025E7
+    
     }
     ```
 
@@ -88,7 +90,8 @@ Each service runs independently, communicating with other services via REST APIs
   "orderDate": "2024-12-16T12:00:00",
   "status": "PROCESSING",
   "totalAmount": 250.00
-}
+  
+    }
     ```
   - Response:
     ```json
@@ -101,7 +104,9 @@ Each service runs independently, communicating with other services via REST APIs
     "status": "PROCESSING",
     "price": 70000.5,
     "totalAmount": 3.500025E7
-}
+
+    }
+  
     ```
 
 #### **Cancel Order**
