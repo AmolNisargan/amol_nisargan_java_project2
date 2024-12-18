@@ -56,26 +56,26 @@ Each service runs independently, communicating with other services via REST APIs
   - Request Body:
     ```json
     {
-      "productId": 1,
-      "quantity": 500,
-      "customerId": 2,
-      "orderDate": "2024-12-16T12:00:00",
-      "status": "PENDING",
-      "totalAmount": 250.00
+          "productId": 1,
+          "quantity": 500,
+          "customerId": 2,
+          "orderDate": "2024-12-16T12:00:00",
+          "status": "PENDING",
+          "totalAmount": 250.00
     
     }
     ```
   - Response:
     ```json
     {
-    "orderId": 99,
-    "productId": 1,
-    "quantity": 500,
-    "customerId": 2,
-    "orderDate": "2024-12-19T01:29:45.6459872",
-    "status": "PENDING",
-    "price": 70000.5,
-    "totalAmount": 3.500025E7
+        "orderId": 99,
+        "productId": 1,
+        "quantity": 500,
+        "customerId": 2,
+        "orderDate": "2024-12-19T01:29:45.6459872",
+        "status": "PENDING",
+        "price": 70000.5,
+        "totalAmount": 3.500025E7
     
     }
     ```
@@ -85,12 +85,13 @@ Each service runs independently, communicating with other services via REST APIs
   - Updates the status of an order.
   - Request Body:
     ```json
-     "productId": 3,
-     "customerId": 2,
-      "orderDate": "2024-12-16T12:00:00",
-      "status": "PROCESSING",
-      "totalAmount": 250.00
-    }
+    {
+       "productId": 3,
+       "customerId": 2,
+        "orderDate": "2024-12-16T12:00:00",
+        "status": "PROCESSING",
+        "totalAmount": 250.00
+      }
     ```
   - Response:
     ```json
